@@ -1,7 +1,7 @@
 {
-  "name": "rsbuild-plugin-example",
-  "version": "0.0.0",
-  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-template",
+  "name": "biome-rspack-plugin",
+  "version": "0.1.0",
+  "repository": "https://github.com/barathrajd/biome-rspack-plugin",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -11,8 +11,8 @@
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
@@ -34,19 +34,22 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@playwright/test": "^1.46.1",
-    "@rsbuild/core": "^1.0.1-rc.0",
+    "@rspack/cli": "^1.0.4",
+    "@rspack/core": "^1.0.4",
     "@types/node": "^20.16.2",
     "nano-staged": "^0.8.0",
     "playwright": "^1.46.1",
+    "rslog": "^1.2.3",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "@rsbuild/core": "1.x || ^1.0.1-beta.0"
+    "@biomejs/biome": "^1.8.3",
+    "@rspack/core": "^1.0.0"
   },
   "peerDependenciesMeta": {
-    "@rsbuild/core": {
+    "@rspack/core": {
       "optional": true
     }
   },

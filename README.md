@@ -1,13 +1,13 @@
-# rsbuild-plugin-example
+# biome-rspack-plugin
 
-rsbuild-plugin-example is a Rsbuild plugin to do something.
+biome-rspack-plugin is a Rspack plugin to do check the format and linting error during dev serve.
 
 <p>
-  <a href="https://npmjs.com/package/rsbuild-plugin-example">
-   <img src="https://img.shields.io/npm/v/rsbuild-plugin-example?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
+  <a href="https://npmjs.com/package/biome-rspack-plugin">
+   <img src="https://img.shields.io/npm/v/biome-rspack-plugin?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
   </a>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
-  <a href="https://npmcharts.com/compare/rsbuild-plugin-example?minimal=true"><img src="https://img.shields.io/npm/dm/rsbuild-plugin-example.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="downloads" /></a>
+  <a href="https://npmcharts.com/compare/biome-rspack-plugin?minimal=true"><img src="https://img.shields.io/npm/dm/rspack-plugin.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="downloads" /></a>
 </p>
 
 ## Usage
@@ -15,34 +15,26 @@ rsbuild-plugin-example is a Rsbuild plugin to do something.
 Install:
 
 ```bash
-npm add rsbuild-plugin-example -D
+npm add @biomejs/biome biome-rspack-plugin -D
 ```
 
-Add plugin to your `rsbuild.config.ts`:
+Add plugin to your `rspack.config.ts`:
 
 ```ts
-// rsbuild.config.ts
-import { pluginExample } from "rsbuild-plugin-example";
+// rspack.config.ts
+import { BiomeRspackPlugin } from "biome-rspack-plugin";
 
 export default {
-  plugins: [pluginExample()],
+  plugins: [new BiomeRspackPlugin()],
 };
 ```
 
 ## Options
 
-### foo
-
-Some description.
-
-- Type: `string`
-- Default: `undefined`
-- Example:
+TODO: Need to add the biome cli options
 
 ```js
-pluginExample({
-  foo: "bar",
-});
+BiomeRspackPlugin({});
 ```
 
 ## License
