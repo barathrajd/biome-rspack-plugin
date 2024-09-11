@@ -1,7 +1,10 @@
 {
   "name": "biome-rspack-plugin",
   "version": "0.1.0",
-  "repository": "https://github.com/barathrajd/biome-rspack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barathrajd/biome-rspack-plugin.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -14,7 +17,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
